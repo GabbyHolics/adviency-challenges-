@@ -1,16 +1,15 @@
 import './App.css';
-
+import Form from './components/Form';
 function App() {
   return (
     <div>
       <div className="container">
-        <ul className="list-container">
-           <h1 className="h1">Regalos</h1>
-            <li className="lista">Zapatos</li>
-            <li className="lista">Cartera</li>
-            <li className="lista">Casa</li>
-            
-        </ul>
+        <header>
+          <h1 className="h1"> Regalos</h1>
+        </header>
+        
+            <Form/>
+        
       </div>
     </div>
   );
