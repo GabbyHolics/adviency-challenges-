@@ -1,42 +1,49 @@
 import React , {useState} from 'react'
+import { nanoid } from 'nanoid'
 import './style/formStyle.css'
 //background-image: url(https://images.unsplash.com/photo-1576422558070-ae29d728947e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
 const Form = () => {
-    const [gift, setGift] = useState('')
-    const [list, setList] = useState([])
-    const submit = (e) => {
-        e.preventDefault();
-        console.log("get")
+    const [gift, setGift] = useState('');
+    const [list, setList] = useState([]);
+    const submit = (e) =>{
+        e.preventDefault()
         setList([
             ...list,
-            {gift}
+            {id: nanoid(), 
+            gift }
         ])
-        e.target.reset()
+             e.target.reset()
         setGift('')
+    }
+    const remove = (id) => {
+        console.log(`remove ${id}`)
+        const arr = list.filter(item => item.id != id)
+        setList(arr)
     }
     return (
         <div>
-
-            <form className="form" onSubmit={submit}>
-                <div className="input-container">
-                    <input type="text"
-                     required="" 
-                     onChange={e => setGift(e.target.value)}     
-                     />
+            <div className="container-form">
+                <form className="form border-radius" onSubmit={submit}>
+                    <div className="input-container">
                     <label>Ingresa tu regalo</label>
-                </div>
-                <button type="button" class="btn" type="submit" >Guardar</button>
-                
-            <ul className="ul">
-                {
-                    list.map((item, index) =>(
-                    <li key={index} className="li">
-                    {item.gift}
-                    </li>
-                    ))
-                }
-            </ul>
-            </form>
+                    <input 
+                    type="text"
+                    onChange={(e=> setGift(e.target.value))}   
+                    />
+                    </div>
+                    <button className="btn" type="submit" > Agregar </button>
+                </form>
+                <ul className="ul border-radius">
+                    {
+                        list.map((item)=>(
+                            <li className="li" key={item.id}>{item.gift}
+                            <div className="button-end"> <button className="btn-delete" onClick={() => remove(item.id)} > Eliminar </button>
+                            </div>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
        </div>
         
     )

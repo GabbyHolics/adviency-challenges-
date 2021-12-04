@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/backgronud.jpg);
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h1{
+  font-size:3rem;
+  text-align: center;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 5rem;
+  color: #AA3A3A;
+}
+
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,4 +50,4 @@
   color: #AA3A3A;
   
 
-}
+} */
