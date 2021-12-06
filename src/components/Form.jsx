@@ -20,6 +20,7 @@ const Form = () => {
         const arr = list.filter(item => item.id != id)
         setList(arr)
     }
+    const clearGift = () => setList([]);
     return (
         <div>
             <div className="container-form">
@@ -42,6 +43,7 @@ const Form = () => {
                             </li>
                         ))
                     }
+                    <button className="btn-delet totally " onClick={() =>clearGift()}> Eliminar toda la lista  </button>
                 </ul>
             </div>
        </div>

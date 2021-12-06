@@ -59,6 +59,9 @@
     padding:20px;
     background-color:#aa3a3a62;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .li{
@@ -77,70 +80,13 @@
 	border-radius:60px;
 	cursor:pointer;
 }
-/* .form{
-   margin-top:15%;
-   background-color:#aa3a3a62;
-   width: 30rem;
-   height:20rem;
-   border-radius: 20px;
-   padding:20px;
-   overflow: hidden;
-}
-
- .h2{
-    color:#AA3A3A;
-    
-} 
-.input-container{
-	position:relative;
-	margin-bottom:20px;
-}
-.input-container label{
-	position:absolute;
-	top:0px;
-	left:0px;
-	font-size:16px;
-	color:#fff;	
-	transition: all 0.5s ease-in-out;
-}
-.input-container input{ 
-  border:0;
-  border-bottom:1px solid #555;  
-  background:transparent;
-  width:100%;
-  padding:8px 0 5px 0;
-  font-size:16px;
-  color:#fff;
-}
-.input-container input:focus{ 
- border:none;	
- outline:none;
- border-bottom:1px solid #e74c3c;	
-}
-.input-container input:focus ~ label,
-.input-container input:valid ~ label{
-	top:-10px;
-	font-size:12px;
-	
-}
-.btn{
-
-	background-color:#A4B787;
+.totally{
+    background-color:#b84b37;
 	outline: none;
     border: 0;
     color: #fff;
-	padding:10px 20px;
-	text-transform:uppercase;
-	border-radius:2px;
+    padding: 5px;
+	border-radius:60px;
 	cursor:pointer;
-    justify-content:end;
+    margin-top:5%;
 }
- .ul{
-     font-weight: bold;
-     margin-top:5%;
-     color:#fff;
-     padding:5px;
- }
-.li{
-    font-size: 1rem;
-} */
