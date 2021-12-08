@@ -2,6 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
 
 *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+.mt-s{
+margin-top: 2%;
+}
+.container{
+  height:100vh;
+  background-image: url(./assets/backgronud.jpg);
+  background-size: cover;
+  padding: .1px;
+ 
+}
+.h1{
+font-size: 6rem;
+color: #AA3A3A;
+text-align: center;
+font-family: 'Mountains of Christmas', cursive;
+}
+
+
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,32 +47,5 @@
   font-family: 'Mountains of Christmas', cursive;
   font-size: 5rem;
   color: #AA3A3A;
-}
-
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Fuzzy Bubbles', cursive;
-}
-
-.container{
-  width: 100vw;
-  height: 100vh;
-  background-image: url('./assets/backgronud.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0.01px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.h1{
-  margin-top:10%;
-  font-family: 'Mountains of Christmas', cursive;
-  font-size: 5rem;
-  color: #AA3A3A;
-  
-
 } */
+

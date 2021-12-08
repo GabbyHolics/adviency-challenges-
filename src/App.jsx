@@ -5,23 +5,12 @@ function App() {
     <div>
     <div className="container">
       <header>
-        <h1 className="h1">
-            Regalos
-        </h1>
-        <main>
-          <Form/>
-        </main>
+        <h1 className="h1 mt-s ">Regalos</h1>
       </header>
+      <main>
+        <Form/>
+      </main>
     </div>
-    
-      {/* <div className="container">
-        <header>
-          <h1 className="h1"> Regalos </h1>
-        </header>
-        <main>
-          <Form/>
-        </main>
-      </div> */}
     </div>
   );
 }
